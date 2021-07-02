@@ -1,0 +1,48 @@
+
+  <header>
+    <div class="topnav">
+      <a routerLink="/login" routerLinkActive="">Logout</a>
+      <a [routerLink]="['/register']" routerLinkActive="'is-active'">Register</a>
+      <a routerLink="/login" routerLinkActive="">Login</a>
+      
+    </div>
+  </header>
+ <div class="border">
+
+ </div>
+ <table align="center">
+     <tr><th>ID</th>
+   <th>First Name</th>
+   <th>Last Name</th>
+ <th>Designation</th>
+ <th>Age</th>
+ <th>Address</th>
+ <!--<th>Actions</th>-->
+ </tr>
+ <tr *ngFor="let datavalues of data">
+   <td><span>{{datavalues.id}}</span></td> 
+   <td><span>{{datavalues.firstname}}</span></td>
+   <td><span>{{datavalues.lastname}}</span></td>
+   <td><span>{{datavalues.designation}}</span></td>
+   <td><span>{{datavalues.age}}</span></td>
+   <td><span>{{datavalues.address}}</span></td>
+   <!--
+   <td>
+    
+     <button class="btn btn-sm btn-warning" click="edituser()">
+       Edit</button>
+     <button class="btn btn-sm btn-danger" click="removeuser()">
+       Delete</button>
+   </td>-->
+ </tr>
+ </table>
+ 
+ <br>
+ <br>
+ 
+ <br>
+ <br>
+ <div class="hi"></div>
+
+ 
+ 
